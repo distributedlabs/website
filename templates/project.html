@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block header_class %} inner-header{% endblock header_class %}
+
+{% block content %}
+<article>
+    <header class="article-hero project-article-hero">
+        <div class="shell">
+            <a class="back-link" href="{{ get_url(path='projects') | safe }}">← All projects</a>
+            <span class="collection-meta">{{ page.extra.year }} / {{ page.extra.services | join(sep=" · ") }}</span>
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
+        </div>
+    </header>
+
+    <div class="shell feature-image reveal">
+        <img src="{{ get_url(path=page.extra.thumbnail) | safe }}" alt="Abstract systems diagram for {{ page.title }}" />
+    </div>
+
+    <div class="shell article-layout">
+        <aside class="article-aside">
+            <span class="eyebrow">Project details</span>
+            <dl>
+                <div>
+                    <dt>Year</dt>
+                    <dd>{{ page.extra.year }}</dd>
+                </div>
+                <div>
+                    <dt>Disciplines</dt>
+                    <dd>{{ page.extra.services | join(sep=", ") }}</dd>
+                </div>
+            </dl>
+        </aside>
+        <div class="prose">
+            {{ page.content | safe }}
+        </div>
+    </div>
+</article>
+{% endblock content %}

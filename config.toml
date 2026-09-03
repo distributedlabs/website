@@ -1,0 +1,15 @@
+base_url = "https://distriblabs.dev"
+title = "Distributed Labs"
+description = "State-of-the-art product engineering across distributed systems, AI memory engineering, blockchain, and product design."
+default_language = "en"
+compile_sass = false
+minify_html = true
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+[markdown]
+smart_punctuation = true
+
+[extra]
+email = "hey@distriblabs.dev"
