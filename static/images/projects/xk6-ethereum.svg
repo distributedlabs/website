@@ -1,0 +1,21 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="40" fill="#EDEBF4"/>
+  <g opacity="0.34" stroke="#8A819F" stroke-width="2">
+    <path d="M180 290H460L535 215H735"/>
+    <path d="M180 500H420L510 590H710"/>
+    <path d="M865 305H1085L1170 390H1420"/>
+    <path d="M890 695H1115L1210 600H1420"/>
+  </g>
+  <g fill="#7B6D96">
+    <circle cx="180" cy="290" r="10"/><circle cx="735" cy="215" r="10"/><circle cx="180" cy="500" r="10"/><circle cx="710" cy="590" r="10"/>
+    <circle cx="865" cy="305" r="10"/><circle cx="1420" cy="390" r="10"/><circle cx="890" cy="695" r="10"/><circle cx="1420" cy="600" r="10"/>
+  </g>
+  <path d="M800 160L605 500L800 615L995 500L800 160Z" fill="#65558A"/>
+  <path d="M800 160V615L995 500L800 160Z" fill="#4E3F73"/>
+  <path d="M800 655L605 538L800 840L995 538L800 655Z" fill="#8A7CAA"/>
+  <path d="M800 655V840L995 538L800 655Z" fill="#65558A"/>
+  <path d="M270 760C340 760 340 692 410 692C480 692 480 790 550 790C620 790 620 720 690 720" stroke="#C5603F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M910 760H975L1010 680L1060 830L1110 720L1145 760H1330" stroke="#C5603F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="115" fill="#332C40" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1">xk6 / ethereum</text>
+  <text x="80" y="915" fill="#65558A" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">PROTOCOL LOAD TESTING / 2022</text>
+</svg>

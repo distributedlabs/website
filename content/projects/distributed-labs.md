@@ -1,7 +1,7 @@
 +++
 title = "Distributed Labs"
 description = "A new identity and publishing platform for an independent product engineering studio."
-weight = 2
+weight = 3
 
 [extra]
 thumbnail = "images/projects/distributed-labs.svg"
