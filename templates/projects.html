@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Projects — {{ config.title }}{% endblock title %}
+{% block description %}{{ section.description }}{% endblock description %}
+{% block header_class %} inner-header{% endblock header_class %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="shell page-hero-grid">
+        <p class="eyebrow">Selected work</p>
+        <div>
+            <h1>{{ section.title }}</h1>
+            <p>{{ section.description }}</p>
+        </div>
+    </div>
+</section>
+
+<section class="collection-section">
+    <div class="shell project-list">
+        {% for project in section.pages %}
+        <article class="project-card reveal">
+            <a class="project-thumbnail" href="{{ project.permalink | safe }}" aria-label="Read {{ project.title }} case study">
+                <img src="{{ get_url(path=project.extra.thumbnail) | safe }}" alt="Abstract systems diagram for {{ project.title }}" />
+            </a>
+            <div class="project-card-copy">
+                <div>
+                    <span class="collection-meta">{{ project.extra.year }} / {{ project.extra.services | join(sep=" · ") }}</span>
+                    <h2><a href="{{ project.permalink | safe }}">{{ project.title }}</a></h2>
+                </div>
+                <div>
+                    <p>{{ project.description }}</p>
+                    <a class="text-link" href="{{ project.permalink | safe }}">View project</a>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}

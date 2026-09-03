@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} — {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block header_class %} inner-header{% endblock header_class %}
+
+{% block content %}
+<article>
+    <header class="article-hero blog-article-hero">
+        <div class="shell article-hero-inner">
+            <a class="back-link" href="{{ get_url(path='blog') | safe }}">← All articles</a>
+            <div class="article-kicker">
+                <span>{{ page.extra.category }}</span>
+                <time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time>
+                <span>{{ page.reading_time }} min read</span>
+            </div>
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
+        </div>
+    </header>
+
+    <div class="shell article-layout blog-layout">
+        <aside class="article-aside">
+            <span class="eyebrow">Published by</span>
+            <p>Distributed Labs</p>
+            <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+        </aside>
+        <div class="prose">
+            {{ page.content | safe }}
+        </div>
+    </div>
+</article>
+{% endblock content %}

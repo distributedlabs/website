@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+                <div class="shell hero-grid">
+                    <div>
+                        <p class="eyebrow">Independent product engineering studio</p>
+                        <h1>State of the art product engineering with the taste of an <em>artist</em> applied to your company goals.</h1>
+                        <p class="hero-copy">
+                            Experts in Distributed Systems, AI Memory Engineering, Blockchain and Product Design.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button" href="mailto:{{ config.extra.email }}">
+                                Build with us
+                                <svg aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                            <a class="text-link" href="#expertise">Explore our expertise</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-art" aria-hidden="true">
+                        <svg class="orbit" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="300" cy="300" r="220" stroke="#d9d5c9" />
+                            <circle cx="300" cy="300" r="146" stroke="#d9d5c9" />
+                            <path d="M80 300C146 212 219 165 300 158C382 151 457 198 520 300" stroke="#7b8067" stroke-width="1.4" />
+                            <path d="M300 80C391 146 441 219 442 300C443 382 396 456 300 520" stroke="#c5603f" stroke-width="1.4" />
+                            <path d="M111 411C212 380 306 385 393 430" stroke="#1d1d1b" stroke-width="1.2" />
+                            <line x1="151" y1="188" x2="445" y2="410" stroke="#d9d5c9" />
+                            <circle cx="151" cy="188" r="9" fill="#c5603f" />
+                            <circle cx="442" cy="300" r="7" fill="#1d1d1b" />
+                            <circle cx="393" cy="430" r="11" fill="#7b8067" />
+                            <circle cx="300" cy="158" r="5" fill="#1d1d1b" />
+                            <circle cx="262" cy="391" r="4" fill="#c5603f" />
+                            <circle cx="300" cy="300" r="25" fill="#f4f1e8" stroke="#1d1d1b" />
+                            <circle cx="300" cy="300" r="5" fill="#1d1d1b" />
+                        </svg>
+                        <div class="signal">Systems in motion</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="expertise" id="expertise">
+                <div class="shell">
+                    <div class="section-heading reveal">
+                        <p class="eyebrow">What we do</p>
+                        <h2>Deep technology, shaped into useful products.</h2>
+                    </div>
+                    <div class="services">
+                        <article class="service reveal">
+                            <span class="service-number">01 / SYSTEMS</span>
+                            <h3>Distributed Systems</h3>
+                            <p>Resilient architectures for products that need to coordinate, scale, and remain dependable under real-world pressure.</p>
+                        </article>
+                        <article class="service reveal">
+                            <span class="service-number">02 / INTELLIGENCE</span>
+                            <h3>AI Memory Engineering</h3>
+                            <p>Memory systems that give intelligent products continuity, context, and a more useful understanding of every interaction.</p>
+                        </article>
+                        <article class="service reveal">
+                            <span class="service-number">03 / PROTOCOLS</span>
+                            <h3>Blockchain</h3>
+                            <p>Protocol and application engineering for trustworthy digital infrastructure, from first principles to production.</p>
+                        </article>
+                        <article class="service reveal">
+                            <span class="service-number">04 / EXPERIENCE</span>
+                            <h3>Product Design</h3>
+                            <p>Clear product strategy, expressive interfaces, and careful interaction design that make complex systems feel intuitive.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="manifesto" id="about">
+                <div class="shell manifesto-grid reveal">
+                    <p class="eyebrow">Our point of view</p>
+                    <blockquote>
+                        Engineering gives an idea integrity. <span>Taste gives it meaning.</span> We bring both to the same table.
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="approach" id="approach">
+                <div class="shell">
+                    <div class="approach-intro reveal">
+                        <h2>From difficult question to enduring product.</h2>
+                        <p>
+                            We work across strategy, systems, and experience—reducing ambiguity early, making the hard technical decisions, and carrying the details through to a coherent whole.
+                        </p>
+                    </div>
+                    <div class="principles">
+                        <article class="principle reveal">
+                            <span class="principle-icon" aria-hidden="true">I</span>
+                            <h3>Think from first principles</h3>
+                            <p>Start with the real constraint, not the familiar solution.</p>
+                        </article>
+                        <article class="principle reveal">
+                            <span class="principle-icon" aria-hidden="true">II</span>
+                            <h3>Build as one discipline</h3>
+                            <p>Product, design, and engineering move together from day one.</p>
+                        </article>
+                        <article class="principle reveal">
+                            <span class="principle-icon" aria-hidden="true">III</span>
+                            <h3>Care about the last 10%</h3>
+                            <p>The final details are where reliable products become memorable ones.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="shell">
+                    <div class="contact-card reveal">
+                        <div class="contact-content">
+                            <p class="eyebrow" style="justify-content: center; color: rgba(250, 248, 242, 0.74)">A good place to begin</p>
+                            <h2>Bring us the hard part.</h2>
+                            <a class="button button-light" href="mailto:{{ config.extra.email }}">
+                                Start a conversation
+                                <svg aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock content %}
