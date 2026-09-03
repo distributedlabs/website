@@ -1,0 +1,26 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="40" fill="#F6EDF3"/>
+  <g opacity="0.4" fill="#D82E9C">
+    <circle cx="1170" cy="150" r="12"/><circle cx="1235" cy="150" r="12"/><circle cx="1300" cy="150" r="12"/><circle cx="1365" cy="150" r="12"/>
+    <circle cx="1170" cy="215" r="12"/><circle cx="1235" cy="215" r="12"/><circle cx="1300" cy="215" r="12"/><circle cx="1365" cy="215" r="12"/>
+    <circle cx="1170" cy="280" r="12"/><circle cx="1235" cy="280" r="12"/><circle cx="1300" cy="280" r="12"/><circle cx="1365" cy="280" r="12"/>
+    <circle cx="1170" cy="345" r="12"/><circle cx="1235" cy="345" r="12"/><circle cx="1300" cy="345" r="12"/><circle cx="1365" cy="345" r="12"/>
+  </g>
+  <g stroke="#821B71" stroke-width="3">
+    <circle cx="800" cy="500" r="262"/>
+    <circle cx="800" cy="500" r="172" opacity="0.28"/>
+    <path d="M800 238V500L982 620"/>
+    <path d="M538 500H1062" opacity="0.18"/>
+  </g>
+  <g stroke="#D82E9C" stroke-width="5">
+    <path d="M616 314C683 266 756 238 800 238"/>
+    <path d="M982 620C932 696 864 748 800 762"/>
+  </g>
+  <g fill="#821B71">
+    <circle cx="800" cy="238" r="18"/><circle cx="538" cy="500" r="18"/><circle cx="982" cy="620" r="18"/><circle cx="800" cy="762" r="18"/>
+  </g>
+  <circle cx="800" cy="500" r="50" fill="#821B71"/>
+  <circle cx="800" cy="500" r="12" fill="#F6EDF3"/>
+  <text x="80" y="115" fill="#821B71" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1">Dkron</text>
+  <text x="80" y="895" fill="#821B71" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">DISTRIBUTED JOB SCHEDULING / 2015—PRESENT</text>
+</svg>

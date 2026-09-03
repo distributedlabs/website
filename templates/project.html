@@ -31,6 +31,12 @@
                     <dt>Disciplines</dt>
                     <dd>{{ page.extra.services | join(sep=", ") }}</dd>
                 </div>
+                {% if page.extra.project_url %}
+                <div>
+                    <dt>Website</dt>
+                    <dd><a href="{{ page.extra.project_url | safe }}">Visit project ↗</a></dd>
+                </div>
+                {% endif %}
             </dl>
         </aside>
         <div class="prose">
