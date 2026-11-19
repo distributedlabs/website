@@ -1,5 +1,5 @@
 +++
 title = "Distributed Labs"
-description = "State-of-the-art product engineering with the taste of an artist, applied to your company goals."
+description = "Bring us the hard part. An independent studio for distributed systems, AI memory, and blockchain products, with design built in."
 template = "index.html"
 +++

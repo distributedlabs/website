@@ -1,6 +1,6 @@
 base_url = "https://distriblabs.dev"
 title = "Distributed Labs"
-description = "State-of-the-art product engineering across distributed systems, AI memory engineering, blockchain, and product design."
+description = "Bring us the hard part. An independent studio for distributed systems, AI memory, and blockchain products, with design built in."
 default_language = "en"
 compile_sass = false
 minify_html = true
@@ -13,3 +13,4 @@ smart_punctuation = true
 
 [extra]
 email = "hey@distriblabs.dev"
+booking_url = "https://calendar.proton.me/bookings#ep7QVH00jEAEr1lXpYPLat2Gmv_IQQ8O6y4i-sqYhrM="
