@@ -1,53 +1,53 @@
 +++
-title = "Privacy Policy"
-description = "How Distributed Labs processes your personal data and how you can exercise your privacy rights."
+title = "Política de privacidad"
+description = "Cómo trata Distributed Labs tus datos personales y cómo puedes ejercer tus derechos en materia de protección de datos."
 template = "privacy-policy.html"
 +++
 
-This Privacy Policy applies to the Distributed Labs website ([distriblabs.dev](https://distriblabs.dev/)). It explains what personal data we process, why we process it, and the legal basis for doing so under the General Data Protection Regulation (GDPR, Regulation (EU) 2016/679) and Spain’s Organic Law 3/2018 on the Protection of Personal Data and Guarantee of Digital Rights (LOPDGDD).
+Esta política de privacidad se aplica al sitio web de Distributed Labs ([distriblabs.dev](@/_index.md)). En ella explicamos qué datos personales tratamos, con qué fines y sobre qué base jurídica, de acuerdo con el Reglamento General de Protección de Datos (RGPD, Reglamento (UE) 2016/679) y la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).
 
-## 1. Data controller and contact details
+## 1. Responsable del tratamiento y datos de contacto
 
-Distributed Labs SLU is the data controller for this website. If you have questions about this policy or how we process your personal data, email us at [hey@distriblabs.dev](mailto:hey@distriblabs.dev).
+Distributed Labs SLU es la entidad responsable del tratamiento de los datos personales en este sitio web. Si tienes dudas sobre esta política o sobre cómo tratamos tus datos personales, escríbenos a [hey@distriblabs.dev](mailto:hey@distriblabs.dev).
 
-## 2. How we process personal data
+## 2. Cómo tratamos los datos personales
 
-We process personal data only as necessary to operate this website and provide our content and services. We rely on your consent where required or on another applicable legal basis under Article 6 of the GDPR.
+Solo tratamos los datos personales necesarios para mantener este sitio web en funcionamiento y ofrecer nuestros contenidos y servicios. La base jurídica del tratamiento es tu consentimiento cuando sea necesario o, en los demás casos, la que corresponda conforme al artículo 6 del RGPD.
 
-## 3. Website hosting
+## 3. Alojamiento del sitio web
 
-This website is hosted on GitHub Pages. For details about how GitHub handles personal data, see the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+Este sitio web se aloja en GitHub Pages. Puedes consultar cómo trata GitHub los datos personales en su [declaración general de privacidad](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
-## 4. Server logs
+## 4. Registros del servidor
 
-GitHub Pages [logs and stores visitors’ IP addresses for security purposes](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), whether or not they are signed in to GitHub.
+GitHub Pages [registra y almacena las direcciones IP de quienes visitan el sitio por motivos de seguridad](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection), hayan iniciado sesión en GitHub o no.
 
-## 5. Email inquiries and bookings
+## 5. Consultas por correo electrónico y reservas de citas
 
-If you email us, we use your email address and the information you provide to respond to and manage your inquiry. If you use a Proton Calendar booking link we provide, we use the information you submit to arrange and manage the appointment. See the [Proton Calendar Privacy Policy](https://proton.me/calendar/privacy-policy) for details about how Proton handles data.
+Si nos escribes, utilizamos tu dirección de correo electrónico y la información que nos facilitas para gestionar tu consulta y responderte. Si reservas una cita a través de un enlace de Proton Calendar que te hayamos facilitado, utilizamos los datos que envías para concertar y gestionar la cita. Para saber cómo trata Proton estos datos, consulta la [política de privacidad de Proton Calendar](https://proton.me/calendar/privacy-policy).
 
-The legal basis is Article 6(1)(b) of the GDPR when we take steps at your request before entering into a contract. Otherwise, we rely on our legitimate interest in responding to inquiries and arranging appointments under Article 6(1)(f).
+Cuando adoptamos medidas precontractuales a petición tuya, la base jurídica es el artículo 6.1.b) del RGPD. En los demás casos, nos basamos en nuestro interés legítimo en atender consultas y concertar citas, conforme al artículo 6.1.f) del RGPD.
 
-## 6. Cookies and third-party resources
+## 6. Cookies y recursos de terceros
 
-We do not use analytics or marketing cookies on this website. The site loads fonts from Google Fonts. When your browser requests a font, Google receives your IP address and technical request information. Google states that its Fonts API does not set or log cookies. For more information, see the [Google Fonts FAQ](https://fonts.google.com/faq).
+No utilizamos cookies de análisis ni de marketing en este sitio web. La web carga fuentes de Google Fonts. Cuando tu navegador solicita una fuente, Google recibe tu dirección IP e información técnica sobre la solicitud. Según Google, su API de Google Fonts no instala ni registra cookies. Encontrarás más información en las [preguntas frecuentes de Google Fonts](https://fonts.google.com/faq).
 
-## 7. Your privacy rights
+## 7. Tus derechos en materia de protección de datos
 
-Subject to applicable law, you have the right to access your personal data and obtain information about its source, recipients, and the purposes for which we process it. You may also request rectification, erasure, or restriction of processing, exercise your right to data portability, or object to processing. Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing before withdrawal.
+De acuerdo con la legislación aplicable, tienes derecho a acceder a tus datos personales y a obtener información sobre su origen, sus destinatarios y los fines para los que los tratamos. También puedes solicitar la rectificación o supresión de tus datos o la limitación de su tratamiento, ejercer tu derecho a la portabilidad de los datos u oponerte al tratamiento. Cuando el tratamiento se base en tu consentimiento, puedes retirarlo en cualquier momento. La retirada no afecta a la licitud del tratamiento previo.
 
-To exercise your rights, email [hey@distriblabs.dev](mailto:hey@distriblabs.dev).
+Para ejercer tus derechos, escríbenos a [hey@distriblabs.dev](mailto:hey@distriblabs.dev).
 
-## 8. Right to lodge a complaint
+## 8. Derecho a presentar una reclamación
 
-If you believe that the processing of your personal data infringes the GDPR, you can lodge a complaint with a supervisory authority, in particular in the EU member state where you usually live, where you work, or where the alleged infringement took place. In Spain, the supervisory authority is the Agencia Española de Protección de Datos (AEPD), based in Madrid.
+Si consideras que el tratamiento de tus datos personales infringe el RGPD, puedes presentar una reclamación ante una autoridad de control, en particular en el Estado miembro de la UE donde residas habitualmente, donde trabajes o donde se haya producido la presunta infracción. En España, la autoridad de control es la Agencia Española de Protección de Datos (AEPD), con sede en Madrid.
 
-## 9. Data retention
+## 9. Conservación de los datos
 
-We retain personal data only for as long as necessary for the purpose for which we collected it, unless the law requires a longer retention period. After that, we securely delete or anonymise it.
+Conservamos los datos personales solo durante el tiempo necesario para cumplir la finalidad para la que los recogimos, salvo que la ley exija un plazo mayor. Una vez transcurrido ese plazo, los eliminamos de forma segura o los anonimizamos.
 
-## 10. Changes to this policy
+## 10. Cambios en esta política
 
-We may update this policy to reflect changes in our services or legal requirements. The current version is available on this page.
+Podemos actualizar esta política si cambian nuestros servicios o los requisitos legales. La versión vigente está disponible en esta página.
 
-**Last updated: 19 November 2026.**
+**Última actualización: 19 de noviembre de 2026.**

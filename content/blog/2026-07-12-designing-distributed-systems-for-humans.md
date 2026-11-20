@@ -1,49 +1,50 @@
 +++
-title = "Designing distributed systems for humans"
-description = "The strongest systems make failure legible to the people operating and using them."
+title = "Cómo diseñar sistemas distribuidos que se entiendan"
+description = "Los sistemas más robustos permiten entender qué ha fallado, tanto a quienes los usan como a quienes los mantienen."
 date = 2026-07-12
 
 [extra]
-category = "Distributed Systems"
+cover = "images/blog/systems.svg"
+category = "Sistemas distribuidos"
 +++
 
-Distributed systems are usually described through machines: nodes, messages, clocks, partitions, and consensus. Yet their quality is ultimately judged by people trying to understand what happened and what to do next.
+Solemos describir los sistemas distribuidos hablando de máquinas: nodos, mensajes, relojes, particiones de red y consenso. Pero, a la hora de la verdad, quien juzga la calidad de un sistema es la persona que intenta entender qué ha pasado y qué hacer a continuación.
 
 <!-- more -->
 
-A correct protocol can still produce a difficult product. A reliable service can still be impossible to operate. Human legibility belongs inside the architecture, not in documentation added after it.
+Un protocolo correcto puede dar lugar a un producto difícil de usar. Un servicio fiable puede ser imposible de administrar. Que se entienda cómo funciona el sistema es una cuestión de arquitectura; no basta con documentarlo después.
 
-## Make state explainable
+## Dar nombre a los estados
 
-Every asynchronous system contains moments where truth is incomplete. A request has been accepted but not applied. A replica is available but behind. A workflow succeeded in one service and is still pending in another.
+En cualquier sistema asíncrono hay momentos en los que solo se sabe parte de lo que ocurre. Se ha aceptado una solicitud, pero el cambio aún no se ha aplicado. Una réplica está disponible, pero va con retraso. Un paso del proceso ha terminado en un servicio y sigue pendiente en otro.
 
-Hiding these states behind a generic spinner removes information that users and operators need. Naming them creates a shared language for the system:
+Si la interfaz se limita a mostrar una rueda que gira, oculta información que necesitan tanto los usuarios como el equipo de operaciones. Dar nombre a esos estados permite que todos hablen el mismo idioma:
 
-- received,
-- pending,
-- confirmed,
-- degraded,
-- retrying,
-- failed with a safe recovery path.
+- solicitud recibida;
+- pendiente;
+- confirmada;
+- servicio degradado;
+- reintento en curso;
+- fallo con una vía de recuperación segura.
 
-These are product states and operational states at the same time. Designing them together prevents the interface from promising certainty that the backend cannot provide.
+Son estados del producto y también del sistema que lo sostiene. Diseñarlos a la vez evita que la interfaz prometa una certeza que el servidor no puede garantizar.
 
-## Prefer bounded uncertainty
+## Poner límites a la incertidumbre
 
-There is no universal consistency model. The right choice depends on which mistakes the product can tolerate.
+No hay un modelo de consistencia que sirva para todo. La elección depende de qué errores pueda tolerar el producto.
 
-A social counter may accept temporary drift. A balance transfer cannot. A collaborative editor may show speculative local state, provided conflicts converge predictably. The architecture should make this trade explicit rather than inheriting it accidentally from a database default.
+Un contador en una red social puede admitir un desfase temporal. Una transferencia de saldo, no. Un editor colaborativo puede mostrar cambios locales sin confirmar, siempre que, en caso de conflicto, las copias converjan de forma predecible. Conviene decidir qué garantías se necesitan al diseñar la arquitectura, en lugar de dejar que las determine por accidente la configuración por defecto de la base de datos.
 
-Bounded uncertainty is easier to reason about than vague eventual behavior. State what can be stale, by how much, for how long, and what action restores confidence.
+Es más fácil trabajar con una incertidumbre acotada que con la promesa de que todo acabará cuadrando en algún momento. Hay que especificar qué datos pueden quedar desactualizados, cuánto pueden desviarse, durante cuánto tiempo y qué hay que hacer para volver a fiarse de ellos.
 
-## Recovery is part of the main path
+## Contar con la recuperación desde el principio
 
-Networks partition, processes restart, and downstream dependencies become slow. These are normal operating conditions. A mature design decides how retries are made safe, how duplicated work is recognized, and how partial progress is reconciled.
+Un corte de red puede dejar nodos incomunicados, los procesos se reinician y los servicios de los que dependemos a veces tardan en responder. Todo esto forma parte del funcionamiento normal. Un buen diseño prevé cómo repetir una operación sin riesgo, cómo reconocer que un trabajo ya se ha hecho y cómo conciliar los resultados cuando solo se ha completado una parte.
 
-The same thinking should reach the product. If an operation can be retried, the interface should say so. If the outcome is unknown, it should not claim failure. If human intervention is required, the system should preserve enough evidence to make that intervention decisive.
+El producto debe seguir el mismo criterio. Si se puede volver a intentar una operación, la interfaz debe indicarlo. Si aún no se conoce el resultado, no debe darla por fallida. Y si hace falta que intervenga alguien, el sistema debe conservar información suficiente para que esa persona pueda resolver el problema.
 
-## Reduce the distance between layers
+## Acercar las capas del sistema
 
-The best distributed products align their user vocabulary with their system guarantees. Engineers, designers, and operators then discuss the same transitions instead of translating between incompatible models.
+En los mejores productos distribuidos, los términos que ve el usuario reflejan lo que el sistema puede garantizar. Así, los equipos de ingeniería, diseño y operaciones pueden hablar de los mismos cambios de estado sin tener que traducir entre modelos incompatibles.
 
-This alignment is a form of simplicity. Not fewer components at any cost, but fewer opportunities for one layer to misunderstand another. The result is software that behaves coherently when everything works—and remains understandable when it does not.
+También en eso consiste la sencillez. No se trata de quitar componentes a toda costa, sino de evitar que un mismo estado signifique cosas distintas en capas distintas. El resultado es un producto que se comporta de forma coherente cuando todo va bien y que se sigue entendiendo cuando algo falla.

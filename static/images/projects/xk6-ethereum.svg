@@ -1,21 +1,51 @@
-<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="1000" rx="40" fill="#EDEBF4"/>
-  <g opacity="0.34" stroke="#8A819F" stroke-width="2">
-    <path d="M180 290H460L535 215H735"/>
-    <path d="M180 500H420L510 590H710"/>
-    <path d="M865 305H1085L1170 390H1420"/>
-    <path d="M890 695H1115L1210 600H1420"/>
-  </g>
-  <g fill="#7B6D96">
-    <circle cx="180" cy="290" r="10"/><circle cx="735" cy="215" r="10"/><circle cx="180" cy="500" r="10"/><circle cx="710" cy="590" r="10"/>
-    <circle cx="865" cy="305" r="10"/><circle cx="1420" cy="390" r="10"/><circle cx="890" cy="695" r="10"/><circle cx="1420" cy="600" r="10"/>
-  </g>
-  <path d="M800 160L605 500L800 615L995 500L800 160Z" fill="#65558A"/>
-  <path d="M800 160V615L995 500L800 160Z" fill="#4E3F73"/>
-  <path d="M800 655L605 538L800 840L995 538L800 655Z" fill="#8A7CAA"/>
-  <path d="M800 655V840L995 538L800 655Z" fill="#65558A"/>
-  <path d="M270 760C340 760 340 692 410 692C480 692 480 790 550 790C620 790 620 720 690 720" stroke="#C5603F" stroke-width="6" stroke-linecap="round"/>
-  <path d="M910 760H975L1010 680L1060 830L1110 720L1145 760H1330" stroke="#C5603F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="80" y="115" fill="#332C40" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1">xk6 / ethereum</text>
-  <text x="80" y="915" fill="#65558A" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">PROTOCOL LOAD TESTING / 2022</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420"><title>Load profile</title><style>.es-label{display:none}#es:target ~ g .en-label{display:none}#es:target ~ g .es-label{display:inline}</style><g id="es"/>
+<defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#eff1f3" opacity=".28"/></pattern></defs>
+<rect width="960" height="420" fill="#151829"/><rect width="960" height="420" fill="url(#grid)"/>
+<path d="M135 300V271.0" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M150 300V260.7" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M165 300V244.4" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M180 300V245.4" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M195 300V262.2" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M210 300V270.8" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M225 300V258.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M240 300V243.3" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M255 300V246.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M270 300V262.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M285 300V269.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M300 300V254.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M315 300V238.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M330 300V241.5" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M345 300V255.5" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M360 300V255.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M375 300V235.3" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M390 300V214.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M405 300V211.2" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M420 300V216.8" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M435 300V206.7" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M450 300V177.0" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M465 300V150.7" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M480 300V145.6" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M495 300V150.3" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M510 300V141.8" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M525 300V119.4" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M540 300V107.0" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M555 300V119.5" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M570 300V141.8" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M585 300V150.3" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M600 300V145.6" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M615 300V150.8" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M630 300V177.1" fill="none" stroke="#d9ff78" stroke-width="8"/>
+<path d="M645 300V206.7" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M660 300V216.8" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M675 300V211.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M690 300V214.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M705 300V235.3" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M720 300V255.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M735 300V255.5" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M750 300V241.5" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M765 300V238.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M780 300V254.9" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M795 300V269.1" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M810 300V262.8" fill="none" stroke="#eff1f3" stroke-width="8"/>
+<path d="M24 42V24H42 M918 24H936V42 M24 378V396H42 M918 396H936V378" fill="none" stroke="#d9ff78" stroke-width="2"/>
+<g font-family="monospace" font-size="17" letter-spacing="2" fill="#eff1f3"><text x="54" y="60">DL / 02</text><text x="906" y="377" text-anchor="end"><tspan class="en-label">LOAD PROFILE</tspan><tspan class="es-label">PERFIL DE CARGA</tspan></text></g></svg>

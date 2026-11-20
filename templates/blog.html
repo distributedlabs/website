@@ -7,7 +7,7 @@
 {% block content %}
 <section class="page-hero">
     <div class="shell page-hero-grid">
-        <p class="eyebrow">Field notes</p>
+        <p class="eyebrow">{{ trans(key="field_notes", lang=lang) }}</p>
         <div>
             <h1>{{ section.title }}</h1>
             <p>{{ section.description }}</p>
@@ -20,13 +20,14 @@
         {% for post in section.pages %}
         <article class="article-row reveal">
             <div class="article-row-meta">
-                <span>{{ post.date | date(format="%d %B %Y") }}</span>
+                {% if post.extra.cover %}<img class="note-thumbnail" width="960" height="420" loading="lazy" src="{{ get_url(path=post.extra.cover) | safe }}{% if lang == 'es' %}#es{% endif %}" alt="" />{% endif %}
+                <span>{% if lang == "es" %}{{ post.date | date(format="%d de %B de %Y", locale="es_ES") }}{% else %}{{ post.date | date(format="%d %B %Y") }}{% endif %}</span>
                 <span>{{ post.extra.category }}</span>
             </div>
             <div class="article-row-copy">
                 <h2><a href="{{ post.permalink | safe }}">{{ post.title }}</a></h2>
                 <p>{{ post.description }}</p>
-                <a class="text-link" href="{{ post.permalink | safe }}">Read article</a>
+                <a class="text-link" href="{{ post.permalink | safe }}">{{ trans(key="read_article", lang=lang) }}</a>
             </div>
             <span class="article-arrow" aria-hidden="true">↗</span>
         </article>

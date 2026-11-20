@@ -1,24 +1,24 @@
 +++
 title = "Distributed Labs"
-description = "A new identity and publishing platform for an independent product engineering studio."
+description = "Una nueva identidad y una plataforma de publicación para un estudio independiente de ingeniería de producto."
 weight = 3
 
 [extra]
 thumbnail = "images/projects/distributed-labs.svg"
 year = "2026"
-services = ["Brand direction", "Product design", "Web engineering"]
+services = ["Dirección de marca", "Diseño de producto", "Ingeniería web"]
 +++
 
-## The brief
+## El encargo
 
-Translate a deeply technical practice into a digital identity that feels precise without becoming cold. The site needed to communicate expertise in distributed systems, AI memory engineering, blockchain, and product design while leaving room for the studio's work and thinking to grow.
+Dar forma a una identidad digital que reflejara el rigor técnico del estudio sin resultar fría. La web tenía que mostrar su experiencia en sistemas distribuidos, ingeniería de memoria para IA, blockchain y diseño de producto, y dejar espacio para futuros proyectos y artículos.
 
-## The approach
+## El enfoque
 
-The identity pairs an editorial visual language with a systems-inspired graphic vocabulary. Warm paper, restrained terracotta, serif typography, and orbit-like diagrams create a deliberate contrast with the cold gradients common to technology websites.
+La identidad combina el diseño editorial con elementos gráficos inspirados en los sistemas. Los tonos cálidos del papel, los toques discretos de terracota, la tipografía con remates y los diagramas que recuerdan a órbitas contrastan con los degradados fríos habituales en las webs de tecnología.
 
-The implementation uses Zola to keep the publishing model simple: projects and articles live as structured Markdown, while shared templates preserve a consistent experience across the site.
+Con Zola, publicar es sencillo: los proyectos y los artículos se escriben en Markdown estructurado y las plantillas compartidas dan coherencia a todo el sitio.
 
-## The result
+## El resultado
 
-A fast static portfolio and journal that keeps content portable, deployment straightforward, and the studio's point of view at the center.
+Una web estática y rápida que reúne la cartera de proyectos y las publicaciones del estudio. Es fácil de desplegar, permite trasladar los contenidos a otra plataforma y da protagonismo a la perspectiva del estudio.

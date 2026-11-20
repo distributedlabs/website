@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }} — Implantación de Hermes Agent en España{% endblock title %}
+{% block description %}{{ section.description }}{% endblock description %}
+
+{% block content %}
+<section class="hero">
+    <div class="shell hero-grid">
+        <div>
+            <p class="eyebrow">Para agencias web y consultoras tecnológicas independientes en España</p>
+            <h1>Que la IA se ocupe de esas horas que <em>nunca entran en el presupuesto</em></h1>
+            <p class="hero-copy">Pasar lo que pide el cliente del brief al ticket. Ir detrás del equipo de desarrollo para poder contarle al cliente el viernes cómo va el proyecto. Vemos con vosotros en qué se os va la semana, probamos la IA en una tarea que se repite y medimos cuánto tiempo recuperáis. Vosotros decidís si merece la pena seguir.</p>
+            <div class="hero-actions">
+                <a class="button" href="{{ config.extra.booking_url }}">Contadnos qué tarea se os repite ↗</a>
+                <span>Reservad una llamada de 30 minutos</span>
+            </div>
+            <p class="hero-note">Somos un estudio independiente que ayuda a implantar Hermes Agent en España. Es la herramienta de IA de código abierto que usamos en nuestros propios proyectos.</p>
+        </div>
+        <figure class="plate">
+            <div class="plate-label"><span>DL / ESTUDIOS DE CAMPO</span><span>FIG. 01</span></div>
+            <img src="{{ get_url(path='images/signal-field.svg') | safe }}" width="600" height="360" alt="" />
+            <figcaption><b>Cómo pasa la información de un equipo a otro</b><span>Estudio del flujo de trabajo · ES</span></figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="expertise" id="expertise">
+    <div class="shell">
+        <div class="section-heading reveal">
+            <p class="eyebrow">01 / Aplicaciones</p>
+            <div>
+                <h2>Un Company OS a la medida de vuestra empresa.</h2>
+                <p class="section-note">Nosotros aportamos un método que ya hemos probado. Vosotros sabéis qué pasos necesitan aprobación, dónde se atascan los encargos y quién se ocupa de que salgan adelante. Diseñamos los procesos con esas personas. Por ejemplo:</p>
+            </div>
+        </div>
+        <div class="services">
+            <article class="service reveal">
+                <span class="service-number">01 / El encargo</span>
+                <h3>Basta con escribirlo una vez.</h3>
+                <p>El ticket recoge las palabras del cliente y las decisiones que habéis tomado. Así, quien se ponga con la tarea el lunes sabrá qué acordasteis el viernes.</p>
+            </article>
+            <article class="service reveal">
+                <span class="service-number">02 / Desarrollo</span>
+                <h3>Un cambio de código listo para revisar.</h3>
+                <p>En las tareas de desarrollo que se repiten, Hermes Agent puede preparar un cambio, ejecutar vuestras pruebas y abrir una pull request. Vuestro equipo decide qué pasa a producción.</p>
+            </article>
+            <article class="service reveal">
+                <span class="service-number">03 / Cuentas</span>
+                <h3>El resumen del viernes, sin ir detrás de nadie.</h3>
+                <p>El borrador para el cliente recoge lo que ya habéis entregado. Quien lleva la cuenta lo revisa, le da su tono y lo envía sin tener que pedir novedades al equipo de desarrollo.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="approach" id="approach">
+    <div class="shell">
+        <div class="approach-intro reveal">
+            <h2>¿Qué pasa si nos contratáis?</h2>
+            <p>En la primera llamada, contadnos un proyecto reciente. Si vemos por dónde empezar, acordamos con vosotros hasta dónde llegará el trabajo. Cuando nos deis el visto bueno, estos son los pasos que seguiremos.</p>
+        </div>
+        <div class="principles">
+            <article class="principle reveal">
+                <span class="principle-icon" aria-hidden="true">I</span>
+                <h3>Seguimos un encargo real</h3>
+                <p>Para empezar, quienes hicieron el trabajo nos cuentan cómo fue. Anotamos por qué manos pasó el encargo, elegimos juntos una tarea que se repite y os quita tiempo, y medimos cuántas horas le dedicáis ahora.</p>
+            </article>
+            <article class="principle reveal">
+                <span class="principle-icon" aria-hidden="true">II</span>
+                <h3>Probamos un solo cambio</h3>
+                <p>Probamos una forma más sencilla de hacer la tarea en un proyecto en marcha, junto a la persona que se encargará de ella. Si Hermes resulta útil, lo conectamos a vuestras herramientas y acordamos qué pasos necesitan el visto bueno de alguien del equipo.</p>
+            </article>
+            <article class="principle reveal">
+                <span class="principle-icon" aria-hidden="true">III</span>
+                <h3>Medimos cuánto tiempo recuperáis</h3>
+                <p>Comparamos el tiempo que dedicabais antes con el que necesitáis ahora, contando también la revisión y lo que haya que rehacer. Entre todos decidimos si mantenemos el cambio, lo ajustamos o lo dejamos aquí.</p>
+            </article>
+        </div>
+        <div class="fit-note reveal">
+            <h3>Qué se queda en vuestro equipo</h3>
+            <p>Os entregamos un esquema del proceso y los resultados de la comparación. Si decidís mantener un cambio, enseñamos a la persona responsable a trabajar con él, a modificarlo y a hacer la tarea a mano si hace falta. Podéis dejarlo ahí o elegir con nosotros el siguiente proceso.</p>
+        </div>
+    </div>
+</section>
+
+<section class="expertise" id="about">
+    <div class="shell section-heading reveal">
+        <p class="eyebrow">03 / Notas del estudio</p>
+        <div>
+            <h2>En el estudio también trabajamos con Hermes.</h2>
+            <p class="section-note">Creamos <a class="text-link" href="https://katara.ai/">Katara</a>, una herramienta que permite a las personas y a la IA trabajar con el mismo contexto. Usamos Hermes en nuestro propio proyecto. <a class="text-link" href="{{ get_url(path='@/blog/2026-11-20-why-we-built-katara.md', lang='es') | safe }}">Os contamos por qué creamos Katara</a>. Ahora ayudamos a Digiocracy a implantar un Company OS adaptado a la forma de trabajar de su equipo.</p>
+            <p class="section-note">En Distributed Labs trabajamos Victor Castell y Matthew Rossi junto con especialistas independientes y estudios colaboradores. Antes de crear Katara con Matthew, Victor dirigió la agencia web Season y después desarrolló servicios web y sistemas de datos a gran escala en Jobandtalent.</p>
+            <p class="section-note"><a class="text-link" href="{{ get_url(path='projects/') | safe }}">Ver nuestros proyectos de ingeniería</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="shell">
+        <div class="contact-card reveal">
+            <div class="contact-content">
+                <p class="eyebrow" style="justify-content: center; color: inherit">Basta con un proyecto reciente</p>
+                <h2>Contadnos en qué se os fue la semana.</h2>
+                <div class="contact-actions">
+                    <a class="button button-light" href="{{ config.extra.booking_url }}">Reservad una llamada de 30 minutos ↗</a>
+                    <a class="contact-email" href="mailto:{{ config.extra.email }}?subject=En%20qu%C3%A9%20se%20nos%20fue%20la%20semana">Escribidnos por correo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
