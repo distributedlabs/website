@@ -5,10 +5,11 @@
 {% block header_class %} inner-header{% endblock header_class %}
 
 {% block content %}
+{% set locale_prefix = '' %}{% if lang == 'es' %}{% set locale_prefix = 'es/' %}{% endif %}
 <article>
     <header class="article-hero project-article-hero">
         <div class="shell">
-            <a class="back-link" href="{{ get_url(path='projects') | safe }}">← All projects</a>
+            <a class="back-link" href="{{ get_url(path=locale_prefix ~ 'projects') | safe }}">{{ trans(key="all_projects", lang=lang) }}</a>
             <span class="collection-meta">{{ page.extra.year }} / {{ page.extra.services | join(sep=" · ") }}</span>
             <h1>{{ page.title }}</h1>
             <p>{{ page.description }}</p>
@@ -16,25 +17,25 @@
     </header>
 
     <div class="shell feature-image reveal">
-        <img src="{{ get_url(path=page.extra.thumbnail) | safe }}" alt="Abstract systems diagram for {{ page.title }}" />
+        <img src="{{ get_url(path=page.extra.thumbnail) | safe }}{% if lang == 'es' %}#es{% endif %}" alt="{{ trans(key="abstract_systems_diagram_for", lang=lang) }} {{ page.title }}" />
     </div>
 
     <div class="shell article-layout">
         <aside class="article-aside">
-            <span class="eyebrow">Project details</span>
+            <span class="eyebrow">{{ trans(key="project_details", lang=lang) }}</span>
             <dl>
                 <div>
-                    <dt>Year</dt>
+                    <dt>{{ trans(key="year", lang=lang) }}</dt>
                     <dd>{{ page.extra.year }}</dd>
                 </div>
                 <div>
-                    <dt>Disciplines</dt>
+                    <dt>{{ trans(key="disciplines", lang=lang) }}</dt>
                     <dd>{{ page.extra.services | join(sep=", ") }}</dd>
                 </div>
                 {% if page.extra.project_url %}
                 <div>
-                    <dt>Website</dt>
-                    <dd><a href="{{ page.extra.project_url | safe }}">Visit project ↗</a></dd>
+                    <dt>{{ trans(key="website", lang=lang) }}</dt>
+                    <dd><a href="{{ page.extra.project_url | safe }}">{{ trans(key="visit_project", lang=lang) }}</a></dd>
                 </div>
                 {% endif %}
             </dl>

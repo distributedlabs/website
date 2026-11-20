@@ -46,3 +46,8 @@ body::before { display: none; }
 .text-link, .prose a { color: var(--blue); }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .plate { max-width: 560px; } }
 @media (max-width: 680px) { .hero-grid { gap: 30px; } .hero-actions { flex-flow: row wrap; align-items: center; } .hero h1 { font-size: clamp(2.85rem,11vw,4.5rem); } .plate img { max-height: 190px; object-fit: contain; } .plate-label, .plate figcaption { padding: 8px 12px; } }
+
+.lang-switch { display: flex; font: 600 .78rem var(--mono); }
+.lang-switch a { padding: .45rem .35rem; }
+.lang-switch a[aria-current] { color: var(--blue); text-decoration: underline; text-underline-offset: .25em; }
+@media (max-width: 760px) { .nav { gap: 10px; } }
