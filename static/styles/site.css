@@ -204,7 +204,7 @@
             .hero-grid {
                 display: grid;
                 grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.6fr);
-                align-items: end;
+                align-items: center;
                 gap: 52px;
             }
 
@@ -353,11 +353,18 @@
             }
 
             .service {
+                display: flex;
+                flex-direction: column;
                 min-height: 345px;
                 padding: 34px 34px 38px;
                 border-right: 1px solid var(--line);
                 border-bottom: 1px solid var(--line);
                 transition: background-color 250ms ease;
+            }
+
+            .service > .text-link {
+                align-self: flex-start;
+                margin-top: auto;
             }
 
             .service:hover {
@@ -384,7 +391,7 @@
 
             .service p {
                 max-width: 475px;
-                margin-bottom: 0;
+                margin-bottom: 20px;
                 color: var(--ink-soft);
                 font-size: 0.96rem;
                 line-height: 1.7;
@@ -496,7 +503,7 @@
             }
 
             .principle h3 {
-                margin: auto 0 10px;
+                margin: 32px 0 10px;
                 font-family: var(--serif);
                 font-size: 1.65rem;
                 font-weight: 400;
@@ -1063,18 +1070,7 @@
                 }
 
                 .hero-art {
-                    min-height: 270px;
-                }
-
-                .orbit {
-                    bottom: -115px;
-                    min-width: 430px;
-                    width: 430px;
-                }
-
-                .signal {
-                    right: 4%;
-                    bottom: 7%;
+                    display: none;
                 }
 
                 .expertise,
