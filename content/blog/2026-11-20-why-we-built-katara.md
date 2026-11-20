@@ -5,6 +5,7 @@ date = 2026-11-20
 slug = "why-we-built-katara"
 
 [extra]
+cover = "images/blog/katara.svg"
 category = "AI Memory Engineering"
 +++
 

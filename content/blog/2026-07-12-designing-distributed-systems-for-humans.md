@@ -4,6 +4,7 @@ description = "The strongest systems make failure legible to the people operatin
 date = 2026-07-12
 
 [extra]
+cover = "images/blog/systems.svg"
 category = "Distributed Systems"
 +++
 

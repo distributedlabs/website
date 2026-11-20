@@ -1,3 +1,7 @@
+/* Article index art follows the metadata column at each breakpoint. */
+.note-thumbnail { display: block; width: 100%; height: auto; max-width: 240px; }
+@media (max-width:680px) { .article-row-meta:has(.note-thumbnail) { flex-wrap: wrap; } .note-thumbnail { max-width: none; } }
+
 /* Field Studies — the studio's print and plotting palette. */
 :root {
   --paper: #eff1f3; --paper-light: #fcfcfa; --ink: #151829; --ink-soft: #434858;

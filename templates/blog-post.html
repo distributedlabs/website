@@ -19,6 +19,10 @@
         </div>
     </header>
 
+    {% if page.extra.cover %}
+    <div class="shell feature-image"><img width="960" height="420" src="{{ get_url(path=page.extra.cover) | safe }}" alt="" /></div>
+    {% endif %}
+
     <div class="shell article-layout blog-layout">
         <aside class="article-aside">
             <span class="eyebrow">Published by</span>

@@ -20,6 +20,7 @@
         {% for post in section.pages %}
         <article class="article-row reveal">
             <div class="article-row-meta">
+                {% if post.extra.cover %}<img class="note-thumbnail" width="960" height="420" loading="lazy" src="{{ get_url(path=post.extra.cover) | safe }}" alt="" />{% endif %}
                 <span>{{ post.date | date(format="%d %B %Y") }}</span>
                 <span>{{ post.extra.category }}</span>
             </div>

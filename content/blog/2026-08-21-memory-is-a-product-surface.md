@@ -4,6 +4,7 @@ description = "Why useful AI memory begins with product judgment, not a larger c
 date = 2026-08-21
 
 [extra]
+cover = "images/blog/memory.svg"
 category = "AI Memory Engineering"
 +++
 
