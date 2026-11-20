@@ -1,5 +1,5 @@
 +++
 title = "Distributed Labs"
-description = "Bring us the hard part. An independent studio for distributed systems, AI memory, and blockchain products, with design built in."
+description = "We help web agencies and independent tech consultancies find where time goes and shape a Company OS around their teams, using Hermes Agent where it helps."
 template = "index.html"
 +++
