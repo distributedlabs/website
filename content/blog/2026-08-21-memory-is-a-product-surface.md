@@ -1,46 +1,46 @@
 +++
-title = "Memory is a product surface"
-description = "Why useful AI memory begins with product judgment, not a larger context window."
+title = "La memoria también se diseña"
+description = "Para que la memoria de una IA sea útil, importa más decidir qué debe recordar que ampliar su ventana de contexto."
 date = 2026-08-21
 
 [extra]
 cover = "images/blog/memory.svg"
-category = "AI Memory Engineering"
+category = "Ingeniería de memoria para IA"
 +++
 
-An intelligent product does not become personal simply because it can retrieve old messages. Useful memory is selective. It preserves the details that improve a future decision and lets everything else recede.
+Que un producto con IA pueda recuperar mensajes antiguos no significa que ofrezca un trato más personal. Una memoria útil es selectiva: conserva los detalles que ayudarán a tomar una decisión más adelante y deja que el resto pierda peso.
 
 <!-- more -->
 
-That makes memory more than an infrastructure problem. It is a product surface: users experience what a system remembers, what it forgets, and how confidently it acts on both.
+La memoria no es solo una cuestión de infraestructura. Forma parte de cómo se vive el producto: el usuario nota qué recuerda el sistema, qué olvida y con cuánta seguridad actúa en ambos casos.
 
-## Context is not memory
+## El contexto no es la memoria
 
-A context window is temporary working space. Memory is a policy for deciding what should survive beyond that space. Treating the two as interchangeable usually creates an archive, not understanding.
+La ventana de contexto es un espacio de trabajo temporal. La memoria establece qué merece conservarse cuando se cierra esa ventana. Si confundimos las dos cosas, solemos acabar con un archivo que guarda mucho y entiende poco.
 
-A robust memory system separates several jobs:
+Un buen sistema de memoria reparte el trabajo en varias tareas:
 
-- **Capture:** identify candidate facts, preferences, decisions, and unfinished work.
-- **Consolidation:** merge repetition, resolve contradictions, and preserve provenance.
-- **Retrieval:** return only what improves the current task.
-- **Forgetting:** remove stale or harmful assumptions rather than allowing them to accumulate forever.
+- **Captura:** identificar hechos, preferencias, decisiones y tareas pendientes que podría interesar conservar.
+- **Consolidación:** agrupar información repetida, resolver contradicciones y conservar las fuentes.
+- **Recuperación:** traer solo lo que ayude con la tarea actual.
+- **Olvido:** descartar supuestos obsoletos o perjudiciales en vez de acumularlos indefinidamente.
 
-Each job has a different failure mode. Aggressive capture introduces noise. Weak consolidation creates duplicates. Broad retrieval distracts the model. Reluctance to forget makes yesterday's truth override today's intent.
+Cada tarea falla de una forma distinta. Capturarlo todo introduce ruido. Una consolidación deficiente deja duplicados. Recuperar demasiado distrae al modelo. Y si el sistema se resiste a olvidar, lo que era cierto ayer puede pesar más que lo que pide el usuario hoy.
 
-## Design the correction path first
+## Diseña primero cómo corregir un error
 
-The quality of a memory system is most visible when it is wrong. A user needs to understand why something was recalled, correct it without friction, and trust that the correction will persist.
+La calidad de la memoria se aprecia mejor cuando se equivoca. El usuario necesita entender por qué ha reaparecido un dato, poder corregirlo con facilidad y confiar en que la corrección seguirá ahí la próxima vez.
 
-This is why provenance and lifecycle state matter. A durable memory should know where it came from, when it was observed, and whether a newer fact supersedes it. The interface does not need to expose the internal graph, but the product behavior should reflect that discipline.
+Por eso importan el origen y la vigencia de cada dato. Debería quedar constancia de dónde salió, cuándo se observó y si otro más reciente lo sustituye. No hace falta que la interfaz muestre el grafo interno, pero el producto sí debería comportarse en consecuencia.
 
-## Relevance is contextual
+## La relevancia depende del contexto
 
-The same stored fact can be essential in one workflow and inappropriate in another. Good retrieval considers the active task, recency, confidence, sensitivity, and the cost of omission. It does not merely rank by semantic similarity.
+Un dato puede ser imprescindible en una tarea e inapropiado en otra. Para decidir si se recupera, cuentan la tarea en curso, la antigüedad y la fiabilidad del dato, su sensibilidad y el coste de omitirlo. Ordenar los resultados por similitud semántica no basta.
 
-The useful question is not “What does the system know?” It is “What should the system bring into this decision, now?”
+Más que «¿qué sabe el sistema?», conviene preguntarse «¿qué debería tener en cuenta para tomar esta decisión ahora?».
 
-## Memory earns trust slowly
+## La confianza se gana poco a poco
 
-Long-term context can make software feel continuous rather than transactional. It can also amplify mistakes across every future interaction. The engineering standard should therefore be conservative: explicit data boundaries, observable corrections, and graceful uncertainty.
+Conservar contexto a largo plazo da continuidad al uso de un producto. También puede propagar un error a todas las interacciones futuras. Conviene ser prudentes: poner límites explícitos al uso de los datos, hacer visibles las correcciones y reconocer cuándo falta información.
 
-When those foundations are present, memory stops feeling like a database attached to a model. It becomes part of the product's character—attentive, restrained, and dependable.
+Con esas bases, la memoria deja de parecer una base de datos conectada a un modelo. Se nota en los detalles: el producto presta atención, recuerda lo justo y responde de forma fiable.

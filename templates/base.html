@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ lang }}">
     {% if page is defined %}{% set versions = page.translations %}{% else %}{% set versions = section.translations %}{% endif %}
-    {% set locale_prefix = '' %}{% if lang == 'es' %}{% set locale_prefix = 'es/' %}{% endif %}
+    {% set locale_prefix = '' %}{% if lang != config.default_language %}{% set locale_prefix = lang ~ '/' %}{% endif %}
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

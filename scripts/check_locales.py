@@ -30,7 +30,7 @@ root = Path(sys.argv[1])
 pages = {('/' + p.parent.relative_to(root).as_posix().strip('.') + '/').replace('//', '/'): Document(p)
          for p in root.rglob('index.html')}
 for route, doc in pages.items():
-    lang = 'es' if route.startswith('/es/') else 'en'
+    lang = 'en' if route.startswith('/en/') else 'es'
     assert doc.language == lang, route
     assert set(doc.alternates) == {'en', 'es'} and doc.switch == doc.alternates, route
     assert urlsplit(doc.switch[lang]).path == route, route

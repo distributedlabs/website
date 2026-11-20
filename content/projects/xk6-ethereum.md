@@ -1,27 +1,27 @@
 +++
 title = "xk6 Ethereum"
-description = "A k6 extension for performance testing EVM-compatible blockchains and smart contracts."
+description = "Una extensión de k6 para probar el rendimiento de cadenas de bloques compatibles con la EVM y de contratos inteligentes."
 weight = 2
 
 [extra]
 thumbnail = "images/projects/xk6-ethereum.svg"
 year = "2022"
-services = ["Blockchain", "Performance engineering", "Open source"]
+services = ["Blockchain", "Ingeniería de rendimiento", "Código abierto"]
 project_url = "https://github.com/distributedlabs/xk6-ethereum"
 +++
 
-## The brief
+## El encargo
 
-Conventional load-testing tools understand HTTP requests, but blockchain performance depends on protocol-specific behavior: gas prices, nonces, transaction submission, mining, receipts, contract calls, and changing chain state. Testing an EVM network effectively requires those concepts to be native to the workload.
+Las herramientas convencionales de pruebas de carga trabajan con peticiones HTTP, pero el rendimiento de una cadena de bloques depende de aspectos propios del protocolo: el precio del gas, los *nonces*, el envío y minado de transacciones, los recibos, las llamadas a contratos y los cambios de estado de la cadena. Para probar una red compatible con la máquina virtual de Ethereum (EVM), la carga de prueba debe incorporar esos elementos de forma nativa.
 
-## The approach
+## El enfoque
 
-xk6 Ethereum extends k6 with a JavaScript API backed by a Go Ethereum client. Test scenarios can query balances and blocks, estimate gas, send transactions, wait for receipts, deploy contracts, and call existing contracts without rebuilding that protocol layer for every benchmark.
+xk6 Ethereum amplía k6 con una API de JavaScript basada en un cliente de Ethereum en Go. Los escenarios de prueba permiten consultar saldos y bloques, estimar el gas necesario, enviar transacciones, esperar a que lleguen los recibos, desplegar contratos y llamar a contratos existentes sin tener que reconstruir esa capa del protocolo para cada prueba de rendimiento.
 
-The extension also exposes blockchain-specific measurements alongside k6's standard output, including request duration, mined transactions per second, chain progress, and time to mine. Included Grafana and InfluxDB configuration makes local benchmark runs observable from the first test.
+Además de la salida habitual de k6, la extensión ofrece métricas propias de la cadena: duración de las peticiones, transacciones minadas por segundo, avance de la cadena y tiempo de minado. La configuración de Grafana e InfluxDB que incluye permite supervisar las pruebas locales desde la primera ejecución.
 
-## The result
+## El resultado
 
-An MIT-licensed toolkit for expressing reproducible Ethereum load scenarios in JavaScript while retaining k6's execution model and reporting ecosystem. Teams can exercise EVM nodes and contracts with workloads that describe real blockchain activity rather than generic transport traffic.
+Un conjunto de herramientas con licencia MIT para definir en JavaScript escenarios de carga reproducibles en Ethereum, sin renunciar al modelo de ejecución de k6 ni a sus herramientas de generación de informes. Los equipos pueden probar nodos y contratos compatibles con la EVM con cargas que reproducen la actividad real de la cadena en lugar de limitarse a generar tráfico de red genérico.
 
-[View the source on GitHub](https://github.com/distributedlabs/xk6-ethereum)
+[Ver el código en GitHub](https://github.com/distributedlabs/xk6-ethereum)

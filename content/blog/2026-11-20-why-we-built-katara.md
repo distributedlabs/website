@@ -1,34 +1,34 @@
 +++
-title = "Why we built Katara: the brief after the meeting"
-description = "A project handoff shows why people and AI agents need the same decisions, source documents and boundaries."
+title = "Por qué creamos Katara: qué queda del encargo después de la reunión"
+description = "El traspaso de un proyecto ilustra por qué las personas y los agentes de IA necesitan las mismas decisiones, fuentes y reglas de acceso."
 date = 2026-11-20
-slug = "why-we-built-katara"
+slug = "por-que-creamos-katara"
 
 [extra]
 cover = "images/blog/katara.svg"
-category = "AI Memory Engineering"
+category = "Ingeniería de memoria para IA"
 +++
 
-Picture a developer picking up a checkout redesign on Monday. The ticket says “remove guest checkout.” The approved brief says to keep it. Both documents came from the client. Which one should the developer trust?
+Imagina que el lunes te toca retomar el rediseño del proceso de compra de una tienda. El ticket dice «quitar la compra como invitado». El encargo aprobado dice que hay que mantenerla. Ambos documentos vienen del cliente. ¿A cuál haces caso?
 
 <!-- more -->
 
-The account lead knows: on Friday the client agreed to remove guest checkout from the wholesale store only. It stays on the retail site. The ticket lost those last two words. Give that ticket to a coding agent and it could produce a perfectly good change to the wrong store.
+La responsable de la cuenta conoce la respuesta: el viernes el cliente acordó quitar la compra sin registro solo en la tienda mayorista. En la minorista se mantiene. Ese matiz se perdió al redactar el ticket. Si se lo das a un agente de programación, puede hacer un cambio impecable en la tienda equivocada.
 
-Victor Castell and Matthew Rossi built [Katara](https://katara.ai/) for the part of the job that comes before writing code: knowing enough about the project to do the right work. We call it a context layer for humans and AI. A person picking up a ticket and an agent helping with it should be able to work from the same decision and check where it came from.
+Victor Castell y Matthew Rossi crearon [Katara](https://katara.ai/) para esa parte del trabajo que viene antes de escribir código: conocer el proyecto lo suficiente como para hacer el cambio correcto. La llamamos una capa de contexto para personas e IA. Quien retoma un ticket y el agente que le ayuda deberían poder consultar la misma decisión y comprobar de dónde viene.
 
-## What goes in a Brain?
+## ¿Qué se guarda en un Brain?
 
-Katara calls its shared knowledge spaces *Brains*. Take the checkout example. A useful starting set would be the approved brief, the note from Friday’s call and a short decision the account lead has reviewed: “Guest checkout stays on retail. Remove it from wholesale.” The note matters because the sentence on its own won’t tell the next person why the scope changed.
+En Katara llamamos *Brains* a los espacios de conocimiento compartido. Para el ejemplo de las tiendas, empezaríamos con el encargo aprobado, la nota de la llamada del viernes y una decisión breve que haya revisado la responsable de la cuenta: «Mantenemos la compra como invitado en la tienda minorista. La quitamos en la mayorista». La nota importa: por sí sola, la frase no explica por qué cambió el alcance.
 
-When someone asks about checkout, Katara can retrieve relevant material from that knowledge rather than making the person paste the whole project history into another chat. Access matters here. An agency may run two shops on the same platform for different clients; a relevant document from the other account is still the wrong document to retrieve. Katara’s retrieval takes permissions into account.
+Cuando alguien pregunta por el proceso de compra, Katara puede recuperar la documentación pertinente sin que nadie tenga que volver a pegar todo el historial en otro chat. Aquí entran en juego los permisos. Una agencia puede gestionar dos tiendas de clientes distintos en la misma plataforma. Por muy útil que parezca un documento de la otra cuenta, no corresponde mostrarlo. Katara tiene en cuenta los permisos al recuperar la información.
 
-A disagreement between sources is also useful information. If the Friday decision hasn’t been recorded, we’d rather have a developer notice the conflict and ask the account lead than have an agent quietly choose a version. No memory system can recover an agreement that never made it out of the meeting.
+Que dos fuentes discrepen también es información útil. Si nadie anotó la decisión del viernes, preferimos que alguien detecte la contradicción y pregunte a la responsable de la cuenta antes de que un agente elija una versión sin avisar. Ningún sistema de memoria puede recuperar un acuerdo que no salió de la sala de reuniones.
 
-## Where Hermes fits
+## Dónde encaja Hermes
 
-We run our own project with Hermes Agent. In an agency workflow, we think of the division of work like this: Katara supplies the project context; Hermes can use it to prepare the next piece of work. In our example, that might be a revised ticket that names the wholesale store and leaves retail alone. The developer can check it against the decision before touching either checkout.
+En nuestro propio proyecto trabajamos con Hermes Agent. En una agencia, el reparto podría ser así: Katara aporta el contexto del proyecto y Hermes lo utiliza para preparar la siguiente tarea. En el ejemplo, podría redactar un ticket que especifique el cambio en la tienda mayorista y deje intacta la minorista. Antes de tocar ninguna tienda, quien vaya a hacer el cambio puede contrastarlo con la decisión original.
 
-If you want to try this with your team, pick a question that keeps landing on the same person’s desk. Give a colleague the source material they’re allowed to see and ask them to answer it. Then ask an agent the same question. Can both tell you what was decided, and point to the document that settles it? That’s a more useful first test than counting how many files you’ve uploaded.
+Si quieres probarlo con tu equipo, elige una pregunta que siempre acaba en la mesa de la misma persona. Dale a un compañero la documentación a la que tiene permiso para acceder y pídele que la responda. Después, hazle la misma pregunta a un agente. ¿Saben decirte los dos qué se decidió y señalar el documento que lo aclara? Para una primera prueba, eso dice más que el número de archivos que hayas subido.
 
-[Explore Katara](https://katara.ai/) or read our earlier piece on [what makes AI memory useful](@/blog/2026-08-21-memory-is-a-product-surface.md).
+[Descubre Katara](https://katara.ai/) o lee nuestro artículo sobre [qué hace útil la memoria de una IA](@/blog/2026-08-21-memory-is-a-product-surface.md).

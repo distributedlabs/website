@@ -1,6 +1,6 @@
 +++
 title = "Blog"
-description = "Notes on engineering, intelligence, protocols, and the craft of building products."
+description = "Apuntes sobre ingeniería, inteligencia, protocolos y el oficio de crear productos."
 sort_by = "date"
 template = "blog.html"
 page_template = "blog-post.html"

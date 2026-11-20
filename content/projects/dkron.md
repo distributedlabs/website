@@ -1,27 +1,27 @@
 +++
 title = "Dkron"
-description = "A distributed, fault-tolerant job scheduling system built for cloud-native environments."
+description = "Un sistema distribuido y tolerante a fallos para programar tareas en entornos nativos de la nube."
 weight = 1
 
 [extra]
 thumbnail = "images/projects/dkron.svg"
-year = "2015—present"
-services = ["Distributed systems", "Product engineering", "Open source"]
+year = "2015—actualidad"
+services = ["Sistemas distribuidos", "Ingeniería de producto", "Código abierto"]
 project_url = "https://dkron.io/"
 +++
 
-## The brief
+## El encargo
 
-Scheduled jobs are critical infrastructure, but traditional cron concentrates responsibility on a single machine. Dkron was created to bring workload automation into distributed environments without giving up cron's focused, understandable model.
+Las tareas programadas son una pieza crítica de la infraestructura, pero con el cron tradicional todo depende de una sola máquina. Dkron nació para automatizar tareas en entornos distribuidos sin renunciar a la sencillez de cron.
 
-## The approach
+## El enfoque
 
-Dkron coordinates scheduled work across a cluster. Raft provides consensus and leader election, while a lightweight gossip protocol supports node communication and failure detection. If the leader becomes unavailable, another node takes over so scheduled work can continue without a single point of failure.
+Dkron coordina las tareas programadas entre los nodos de un clúster. Utiliza Raft para alcanzar el consenso y elegir un líder, y un protocolo ligero de tipo *gossip* para que los nodos se comuniquen y detecten fallos. Si el líder deja de estar disponible, otro nodo toma el relevo. Así, las tareas pueden seguir ejecutándose sin depender de un único punto de fallo.
 
-The product pairs that distributed core with practical operating surfaces: a web interface, a JSON API, execution history, logs, retries, job dependencies, concurrency controls, and tag-based node selection.
+Para gestionar las tareas, Dkron ofrece una interfaz web, una API JSON, un historial de ejecuciones y registros. También permite configurar reintentos, definir dependencias entre tareas, controlar la concurrencia y seleccionar nodos por etiquetas.
 
-## The result
+## El resultado
 
-An open-source scheduler written in Go that scales from a small cluster to thousands of nodes while remaining straightforward to install and operate. Dkron is available for Linux, macOS, and Windows, with free and commercial editions for different operational requirements.
+Un programador de tareas de código abierto escrito en Go, fácil de instalar y administrar tanto en un clúster pequeño como en uno de miles de nodos. Dkron está disponible para Linux, macOS y Windows, con ediciones gratuitas y comerciales para distintas necesidades operativas.
 
-[Visit dkron.io](https://dkron.io/) · [View the source on GitHub](https://github.com/dkron-io/dkron)
+[Visitar dkron.io](https://dkron.io/) · [Ver el código en GitHub](https://github.com/dkron-io/dkron)

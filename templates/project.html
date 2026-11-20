@@ -5,7 +5,7 @@
 {% block header_class %} inner-header{% endblock header_class %}
 
 {% block content %}
-{% set locale_prefix = '' %}{% if lang == 'es' %}{% set locale_prefix = 'es/' %}{% endif %}
+{% set locale_prefix = '' %}{% if lang != config.default_language %}{% set locale_prefix = lang ~ '/' %}{% endif %}
 <article>
     <header class="article-hero project-article-hero">
         <div class="shell">
