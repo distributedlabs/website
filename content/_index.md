@@ -1,5 +1,5 @@
 +++
 title = "Distributed Labs"
-description = "We help web agencies and independent tech consultancies find where time goes and shape a Company OS around their teams, using Hermes Agent where it helps."
+description = "Distributed Labs is an independent Hermes Agent implementation partner in Spain. We work with agencies and consultancies to test one workflow and measure the time it saves."
 template = "index.html"
 +++
