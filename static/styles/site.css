@@ -652,8 +652,7 @@
 
             .site-header.inner-header {
                 position: relative;
-                background: rgba(244, 241, 232, 0.92);
-                backdrop-filter: blur(18px);
+
             }
 
             .page-hero {
