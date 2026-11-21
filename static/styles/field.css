@@ -51,3 +51,12 @@ body::before { display: none; }
 .lang-switch a { padding: .45rem .35rem; }
 .lang-switch a[aria-current] { color: var(--blue); text-decoration: underline; text-underline-offset: .25em; }
 @media (max-width: 760px) { .nav { gap: 10px; } }
+
+/* Trusted by: one monochrome strip of logos under the hero. */
+.trusted { border-block: 1px solid var(--ink); background: var(--paper-light); }
+.trusted-inner { display: flex; align-items: center; gap: clamp(20px,4vw,56px); padding-block: 28px; }
+.trusted .eyebrow { flex: none; margin: 0; }
+.logo-strip { display: flex; flex: 1; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px clamp(28px,4vw,56px); margin: 0; padding: 0; list-style: none; }
+.logo-strip img { display: block; width: auto; height: 26px; max-width: 150px; object-fit: contain; filter: grayscale(1) brightness(.35); opacity: .75; transition: opacity .2s; }
+.logo-strip img:hover { opacity: 1; }
+@media (max-width: 760px) { .trusted-inner { flex-direction: column; align-items: flex-start; } .logo-strip { justify-content: flex-start; } .logo-strip img { height: 22px; } }
